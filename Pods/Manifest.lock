@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (4.9.1)
+  - SwiftyToolTip (0.0.3)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.2)
+  - SwiftyToolTip
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SwiftyToolTip
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  SwiftyToolTip: 40c995f88951aca99d836472cfe12be423b3ba9b
+
+PODFILE CHECKSUM: 87126371cdc471b3b30c5f851da557953a0743ff
+
+COCOAPODS: 1.8.4

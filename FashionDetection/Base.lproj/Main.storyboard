@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FashionDetection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r4w-Gt-w1H">
+                                <rect key="frame" x="0.0" y="44" width="414" height="488"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="488" id="rpB-lm-1zk"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlX-BL-p0N">
+                                <rect key="frame" x="168.5" y="584" width="77" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="QzM-sS-Sb7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <state key="normal" title="Upload">
+                                    <color key="titleColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didClick_upload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Zv-L2-BZB"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="iXc-Y1-30o">
+                                <rect key="frame" x="189" y="553" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="eIj-O4-AVa"/>
+                                    <constraint firstAttribute="height" constant="36" id="f6i-4W-7T5"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="r4w-Gt-w1H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3GN-nb-72S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r4w-Gt-w1H" secondAttribute="trailing" id="CMe-yX-Zw1"/>
+                            <constraint firstItem="iXc-Y1-30o" firstAttribute="centerX" secondItem="r4w-Gt-w1H" secondAttribute="centerX" id="Den-2I-qVV"/>
+                            <constraint firstItem="hlX-BL-p0N" firstAttribute="top" secondItem="iXc-Y1-30o" secondAttribute="bottom" constant="-5" id="Egf-KU-SGt"/>
+                            <constraint firstItem="hlX-BL-p0N" firstAttribute="top" secondItem="r4w-Gt-w1H" secondAttribute="bottom" constant="52" id="PbK-R7-pkm"/>
+                            <constraint firstItem="r4w-Gt-w1H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Q2Y-Ou-z21"/>
+                            <constraint firstItem="iXc-Y1-30o" firstAttribute="top" secondItem="r4w-Gt-w1H" secondAttribute="bottom" constant="21" id="sJr-Mq-OY8"/>
+                            <constraint firstItem="hlX-BL-p0N" firstAttribute="centerX" secondItem="r4w-Gt-w1H" secondAttribute="centerX" id="wLV-HH-s5W"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="img" destination="r4w-Gt-w1H" id="E6u-Wr-eVp"/>
+                        <outlet property="indicator" destination="iXc-Y1-30o" id="uby-rx-cZb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+</document>
